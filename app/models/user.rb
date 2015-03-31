@@ -7,7 +7,6 @@ class User < ActiveRecord::Base
   before_save :encrypt_password
   has_many:tags
   has_many:shared_tasks, :class_name=>'Task',:through =>:tags
-
   def encrypt_password
     if self.password_confirmation.present?
       self.password = BCrypt::Password.create(self.password)

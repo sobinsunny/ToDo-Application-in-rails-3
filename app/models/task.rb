@@ -4,7 +4,7 @@ class Task < ActiveRecord::Base
   validates_length_of :task, :minimum => 1, :allow_blank => false
   has_many:tags, :dependent => :destroy
   after_create :create_tag
- attr_accessible :task
+  attr_accessible :task,:status,:task_progress
 
   private
        def create_tag
