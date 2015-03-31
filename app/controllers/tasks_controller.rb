@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-before_filter :check_id
+  before_filter :check_id
 @task_progres=[]
 
 def create
