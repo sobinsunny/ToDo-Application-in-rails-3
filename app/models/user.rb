@@ -1,6 +1,4 @@
 class User < ActiveRecord::Base
-  require 'aescrypt'
-  require 'bcrypt'
   attr_accessible :name,:email, :password, :password_confirmation,:check
   validates_confirmation_of :password
   validates_presence_of :password_confirmation, :if => :password_changed?

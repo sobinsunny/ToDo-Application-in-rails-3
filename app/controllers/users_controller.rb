@@ -12,9 +12,6 @@ class UsersController < ApplicationController
         if ((BCrypt::Password.new(@u.password).is_password? paswd) and (@u.check==1))
           flash[:notice_login] = 'You successfully Signed.'
           session[:user_id]=@u.id
-          p "------------------------"
-          p session[:user_id]
-          p "------------------------"
           redirect_to :controller => "tasks", :action => "index"
         else
           flash[:notice_login] = 'Password for this username is incorrect !'
@@ -34,7 +31,7 @@ class UsersController < ApplicationController
   end
 
   def changepassword
-    @user=User.find(session[:user_id])
+    @user=current_user
     if request.post?
       if @user.update_attributes(params[:user])
         session.delete(:user_id)

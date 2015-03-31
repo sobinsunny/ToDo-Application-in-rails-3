@@ -46,3 +46,5 @@ gem 'aescrypt'
 gem 'bcrypt'
 gem 'rake'
 gem "hirb"
+gem 'authlogic'
+

@@ -6,7 +6,6 @@ def create
     @task = Task.new(params[:task])
     @task[:status]=0;
     @task[:user_id]=session[:user_id]
-    p "-----------ssss-----------"
   if @task.save
     render_tasks()
   else
@@ -163,11 +162,11 @@ end
 
 
 
-
-
 private
 
 def check_id
+  p "-------------------------------------------"
+  p session[:user_id]
 if session[:user_id].nil?
   redirect_to :controller=>'users',:action=>"login"
 else

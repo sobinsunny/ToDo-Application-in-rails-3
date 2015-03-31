@@ -1,5 +1,6 @@
 Upgrade::Application.routes.draw do
   match '/' => 'users#login'
+
   resources :users do
     collection do
   get :login

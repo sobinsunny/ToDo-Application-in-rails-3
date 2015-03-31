@@ -1,3 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?><project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/home/user/Documents/sobin/upgrade/config/initializers/session_store.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/config/routes.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/config/environment.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/Gemfile</file>
+        <file>file:/home/user/Documents/sobin/upgrade/config/application.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/config/initializers/new_rails_defaults.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/config/database.yml</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/controllers/application_controller.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/controllers/comments_controller.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/controllers/tasks_controller.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/controllers/users_controller.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/views/layouts/application.html.erb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/views/users/login.html.erb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/views/users/new.erb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/Rakefile</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/models/user.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/models/user_mailer.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/views/tasks/index.html.erb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/views/tasks/_taskcontent.erb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/views/users/changepassword.erb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/public/javascripts/taskscript.js</file>
+        <file>file:/home/user/Documents/sobin/upgrade/public/javascripts/script.js</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/views/comments/new.html.erb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/models/task.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/models/user_session.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/controllers/user_sessions_controller.rb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/views/user_sessions/new.html.erb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/app/views/user_sessions/_form.html.erb</file>
+        <file>file:/home/user/Documents/sobin/upgrade/db/schema.rb</file>
+    </open-files>
 </project-private>
