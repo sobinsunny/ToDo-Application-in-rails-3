@@ -1,0 +1,31 @@
+<%= javascript_include_tag "scroll" %>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300' rel='stylesheet' type='text/css'>
+<%unless flash[:notice_login].nil?%>
+<div class="alert alert-success" style="position:fixed;top:5px;">
+ <a class="close" data-dismiss="alert">×</a>
+     <%=flash[:notice_login] %>
+</div>
+<%end%>
+<div id="text_area">
+  <div id="img_textbox"></div>
+  <input id="textbox1"  type="text" name="task" placeholder="Add your todo entry  Hit 'Enter' to post "/>
+  </p>
+</div>
+
+<div >
+<% unless @tasks.empty?%>
+  <%if @tasks.first.status==0%>
+      <a id="active"  style="background-color: #e8e8e8" href="/tasks?status=0">Active</a>
+      <a id="inactive" href="/tasks?status=1">Inactive</a>
+  <%elsif @tasks.first.status==1%>
+      <a id="active"  href="/tasks?status=0">Active</a>
+      <a id="inactive" style="background-color: #e8e8e8" href="/tasks?status=1">Inactive</a>
+  <%else%>
+      <a id="active"  style="background-color: #e8e8e8" href="/tasks?status=0">Active</a>
+      <a id="inactive" href="/tasks?status=1">Inactive</a>
+  <%end%>
+<%end%>
+</div>
+<div id="content_area">
+  <%= render :partial => "taskcontent"  %>
+</div>

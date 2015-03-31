@@ -1,0 +1,48 @@
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300' rel='stylesheet' type='text/css'>
+<%= stylesheet_link_tag "todo_css"%>
+<%= javascript_include_tag "taskscript" %>
+<%= javascript_include_tag "script" %>
+<%= javascript_include_tag "bootstrap" %>
+
+<%unless flash[:notice_login].nil?%>
+<div class="alert alert-success">
+ <a class="close" data-dismiss="alert">×</a>
+     <%=flash[:notice_login] %>
+</div>
+<%end%>
+
+
+<div id="content_align">
+    <img id="logo"  src="/images/Logo.png" width="32" />
+    <%=form_for :user, :controller=>"users",:action=>"login" do |f|%>
+    <table id="login_panel">
+      <tr class="line_color">
+        <td><div class="blink_text">Log in</div></td>
+        <td><div class="rt blink_text fade">  <%= link_to "Sign up", :controller=>"users",:action=>"new" %> </div> </td>
+      </tr>
+      <tr>
+        <td>
+          <%=f.label :email %>
+
+        </td>
+        <td>
+          <%=f.text_field :email,:placeholder=>"Email",:required=>true %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%=f.label :Password %>
+        </td>
+        <td>
+          <%=f.password_field :password,:placeholder=>"Password",:required=>true%>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="button">
+          <%=f.submit 'Log in',:class=>"btn"%><u>Forgot password ?</u>
+        </td>
+      </tr>
+    </table>
+</div>
+<%end%>
